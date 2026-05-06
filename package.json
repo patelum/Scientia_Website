@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "rm -rf dist && mkdir -p dist && cp index.html styles.css main.js robots.txt sitemap.xml dist/",
+    "build": "rm -rf dist && mkdir -p dist && cp index.html robots.txt sitemap.xml dist/ && cp -R src dist/src",
     "dev": "python3 -m http.server 4173",
     "preview": "python3 -m http.server 4173 -d dist"
   },
